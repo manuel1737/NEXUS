@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=NEXUS OS Dashboard
+Comment=Open the NEXUS Creator dashboard
+Exec=firefox-esr --new-window file:///usr/share/nexus/index.html
+Icon=applications-development
+Terminal=false
+Categories=Development;Game;
