@@ -1,0 +1,36 @@
+# Desktop and basic system
+live-task-xfce
+lightdm
+firefox-esr
+network-manager
+sudo
+curl
+wget
+git
+git-lfs
+build-essential
+cmake
+ninja-build
+pkg-config
+python3
+python3-venv
+python3-pip
+# Game creation / media tools
+godot
+blender
+kdenlive
+krita
+gimp
+# Graphics / audio / firmware
+mesa-vulkan-drivers
+vulkan-tools
+firmware-linux
+firmware-linux-nonfree
+alsa-utils
+pipewire
+wireplumber
+# Utilities
+p7zip-full
+unzip
+zip
+fonts-noto
