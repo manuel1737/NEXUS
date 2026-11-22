@@ -1,0 +1,30 @@
+
+name: Build NEXUS OS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y live-build
+
+      - name: Configure
+        run: sudo lb config
+
+      - name: Compile ISO
+        run: sudo lb build
+
+      - name: Upload ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: NEXUS-OS-ISO
+          path: "*.iso"
+          if-no-files-found: error
+          
